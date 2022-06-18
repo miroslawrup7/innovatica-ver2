@@ -3,9 +3,9 @@
 const lightbox = document.querySelector("#lightbox");
 const imgWrapper = document.querySelector(".img-wrapper");
 const gallery = document.querySelector(".gallery-box");
-const closeBtn = lightbox.querySelector(".close-btn");
-const prevBtn = lightbox.querySelector(".prev-btn");
-const nextBtn = lightbox.querySelector(".next-btn");
+const closeBtn = document.querySelector(".close-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
 const lightboxSet = () => {
     const images = gallery.querySelectorAll("img");
@@ -92,7 +92,7 @@ const lightboxSet = () => {
 const previous = document.querySelector(".prevPage");
 const next = document.querySelector(".nextPage");
 const galleryBox = document.querySelector(".gallery-box");
-const pages = document.querySelector(".pages");
+const pagesLoc = document.querySelector(".pages");
 
 const pad = "000";
 let imgs = [];
@@ -122,7 +122,7 @@ for (i = 0; i < pagesNumber; i++) {
         goToPage(e.target.getAttribute("data-index"));
     });
 
-    pages.appendChild(div);
+    pagesLoc.appendChild(div);
 }
 
 previous.addEventListener("click", function () {
