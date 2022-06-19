@@ -4338,16 +4338,16 @@ footer {
         }
     
         h2 {
-            font-size: 24px;
+            font-size: 16px;
             font-weight: 700;
-            line-height: 26px;
-            margin-bottom: 16px;
+            line-height: 12px;
+            margin-bottom: 12px;
         }
     
         .text {
-            font-size: 12px;
+            font-size: 9px;
             font-weight: 600;
-            line-height: 20px;
+            line-height: 12px;
             margin-bottom: 20px;
         }
     
@@ -4367,14 +4367,15 @@ footer {
                 font-weight: 800;
             }
             img {
-                height: 18px;
-                margin-left: 30px;
+                height: 11px;
+                margin-left: 7px;
             }
         }
     }
     
     .quick-contact {
         height: $height-quick-contact;
+        box-shadow: -3px 0px 3px rgba(0, 0, 0, 0.6);
         .polygons {
             height: $height-quick-contact;
             .polygon {
@@ -4449,6 +4450,7 @@ footer {
                     flex-direction: row;
                     position: absolute;
                     top: 185px;
+                    height: 80px;
                     .company-box {
                         border-left: none;
                         font-size: 10px;
@@ -4551,7 +4553,6 @@ footer {
         }
     
         .polygons {
-
             height: $height-sec-1;
             .shadow {
                 .polygon {
@@ -4674,39 +4675,40 @@ footer {
         .background {
             height: $height-sec-1;
             &.img {
-                background-size: 100%;
-                background-position-x: 200px;
-                background-position-y: 0px;
+                background-position-x: -250px;
+                background-position-y: -25px;
+                background-size: 180%;
             }
         }
     
         .polygons {
+       
             height: $height-sec-1;
             .shadow {
                 .polygon {
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-1 - $height-sec-1) 100%, 0% 100%);
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l2-pt-about-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-about-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    display: none;
                 }
             }
         }
         .content {
-            margin-top: 40px;
-            padding-left: 60px;
+            margin-top: 30px;
+            padding-left: 145px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 400px;
+                    padding-right: 20px;
                 }
             }
         }
@@ -4717,7 +4719,10 @@ footer {
         .background {
             height: $height-sec-1;
             &.grad {
-                background: linear-gradient(rgba(0,0,0,1), rgba(200,200,200,1));
+                display: none;
+            }
+            &.img {
+                background-color: transparent;
             }
         }
     
@@ -4725,31 +4730,29 @@ footer {
             height: $height-sec-1;
             .shadow {
                 .polygon {
-                    &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-about-2) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-about-2 + $height-sec-1) 100%, 0% 100%);
-                    }
-                }
-                .polygon {
                     &.plg-2 {
-                        clip-path: polygon(calc(100% - $l2-pt-about-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-about-2 + $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        display: none;
+                    }
+                    &.plg-2 {
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.6));
+                    display: none;
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    display: none;
                 }
             }
         }
         .content {
-            margin-top: 40px;
-            padding-left: 450px;
+            margin-top: 30px;
+            padding-left: 20px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 50px;
+                    padding-right: 185px;
                 }
             }
         }
@@ -4758,51 +4761,61 @@ footer {
             width: $resolution;
             img {
                 bottom: 0;
-                left: 200px;
-                height: calc($height-sec-1 + 12%)
+                left: 205px;
+                height: calc($height-sec-1 + 6%)
             }
         }
     }
     
     .about-3 {
         height: $height-sec-1;
+        .background {
+            height: $height-sec-1;
+            &.img {
+                background: url(../img/007.jpg) no-repeat;
+                background-position-x: -320px;
+                background-position-y: -30px;
+                background-size: 200%;
+            }
+        }
         .polygons {
             height: $height-sec-1;
+            
             .shadow {
                 .polygon {
+                    background-color: black;
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-3) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-3 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-about-3 - $height-sec-1) 100%);
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon($l2-pt-about-3 0%, $r2-pt-about-3 0%, calc($r2-pt-about-3 - $height-sec-1) 100%, calc($l2-pt-about-3 - $height-sec-1) 100%);
-                        background-position-x: 60px;
-                        background-position-y: 0px;
-                        background-size: 100%;
-                        width: $resolution;
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
                 }
                 &.right {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+                    display: none;
                 }
                 .polywrapper {
-                        height: $height-sec-1;
+                    display: none;
+                    height: $height-sec-1;
                 }
             }
     
         }
     
         .content {
-            margin-top: 40px;
-            padding-left: 60px;
-
+            margin-top: 55px;
+            padding-left: 145px;
+            &.black {
+                color: white;
+            }
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 510px;
+                    padding-right: 20px;
                 }
             }
         }
@@ -4813,9 +4826,9 @@ footer {
         .background {
             height: $height-sec-1;
             &.img {
-                background-size: 100%;
-                background-position-x: -200px;
-                background-position-y: -150px;
+                background-size: 150%;
+                background-position-x: 40px;
+                background-position-y: -120px;
             }
         }
     
@@ -4823,31 +4836,23 @@ footer {
             height: $height-sec-1;
             .shadow {
                 .polygon {
-                    &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-4) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-4 - $height-sec-1) 100%, 0% 100%);
-                        display: none;
-                    }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% - $l2-pt-about-4 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-about-4 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
-                        
+                        clip-path: polygon(0% 0%, calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 100%, 0% 100%);
                     }
-                }
-                &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    filter: drop-shadow(3px 0px 3px rgba(0, 0, 0, 0.6));
                 }
             }
         }
         .content {
-            margin-top: 160px;
-            padding-left: 470px;
+            margin-top: 50px;
+            padding-left: 20px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 40px;
+                    padding-right: 185px;
                 }
             }
         }
@@ -4859,31 +4864,41 @@ footer {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    background-color: black;
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-3) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-about-3 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-about-3 - $height-sec-1) 100%);
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
+                    }
+                    &.plg-2 {
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
                 }
-                img {
-                    height: 200px;
-                    left: 445px;
-                    top: 40px;
+                &.right {
+                    display: none;
                 }
                 .polywrapper {
                     height: $height-sec-1;
+                    img {
+                        height: 90px;
+                        left: 16px;
+                        top: 78px;
+                    }
                 }
             }
         }
         .content {
-            margin-top: 100px;
-            padding-left: 60px;
+            margin-top: 55px;
+            padding-left: 145px;
+            &.black {
+                color: white;
+            }
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 450px;
+                    padding-right: 20px;
                 }
             }
         }
