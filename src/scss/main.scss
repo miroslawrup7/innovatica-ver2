@@ -3163,7 +3163,7 @@ footer {
                 }
             }
             .nextPage {
-                padding: 7px 10px 10px 7px;
+                padding: 7px 10px 7px 20px;
                 font-weight: 400;
             }
         }
@@ -4156,7 +4156,7 @@ footer {
                 }
             }
             .nextPage {
-                padding: 7px 10px 10px 7px;
+                padding: 7px 10px 7px 20px;
                 font-weight: 400;
             }
         }
@@ -4338,7 +4338,7 @@ footer {
         }
     
         h2 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 12px;
             margin-bottom: 12px;
@@ -4379,7 +4379,7 @@ footer {
         .polygons {
             height: $height-quick-contact;
             .shadow {
-                box-shadow: 0 -3px 3px rgba(0,0,0,0.6);
+                box-shadow: none;
             }
             .polygon {
                 &.plg-1 {
@@ -5083,96 +5083,96 @@ footer {
         .background {
             height: $height-sec-1;
             &.img {
-                background-position-x: 150px;
+                background-position-x: -216px;
                 background-position-y: 0px;
-                background-size: 100%;
+                background-size: 140%;
             }
             &.grad {
-                background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0.8) 100%);
+                display: none;
             }
         }
     
         .polygons {
             height: $height-sec-1; 
+            border-bottom: 1px solid black;
             .shadow {
                 .polygon {
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1 - $height-sec-1) 100%, 0% 100%);
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l1-pt-contact-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l1-pt-contact-2 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(5px 0px 15px rgba(0, 0, 0, 0.6));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    display: none;
                 }
             }
         }
         .content {
-            padding-left: 60px;
-            padding-top: 60px;
+            margin-top: 30px;
+            padding-left: 145px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 510px;
-                }
-                img {
-                    height: 280px;
+                    padding-right: 58px;
                 }
             }
         }
     }
     
     .contact-2 {
-        height: 430px;
-        width: 85%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-        margin-bottom: 70px;
+        box-shadow: none;
+        height: 280px;
+        margin-bottom: 0px;
+        width: 100%;
     }
     
     .contact-3 {
         width: $resolution;
-        margin: 0 auto 100px auto;
-        height: 230px;
+        margin: 0 auto;
+        height: 145px;
         .addresses {
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            height: 270px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+            height: 145px;
             left: 0;
             .content {
                 width: $resolution;
-                padding: 30px 30px;
+                padding: 25px;
                 .address-box {
-                    border-left: 2px solid black;
-                    padding: 0 30px;
+                    border-left: 1px solid #000;
+                    padding: 0px 10px;
                     width: 50%;
                     h2 {
-                        margin-bottom: 15px;
+                        margin-bottom: 10px;
                     }
                 }
                 p, a {
-                    font-size: 15px;
+                    font-size: 8px;
                     font-weight: 500;
-                    line-height: 45px;
+                    line-height: 12px;
                 }
                 a {
-                    font-size: 18px;
+                    font-size: 8px;
                     font-weight: 700;
                 }
                 .email {
+                    margin: 7px 0;
                     img {
-                        height: 24px;
-                        padding-right: 20px;
+                        height: 10px;
+                        padding-right: 7px;
                     }
                 }
                 .tel {
+                    margin: 7px 0;
                     img {
-                        height: 24px;
-                        padding-right: 20px;
+                        height: 10px;
+                        padding-right: 7px;
                     }
                 }
             }
@@ -5187,30 +5187,30 @@ footer {
             margin-top: 40px;
             padding-left: 60px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 340px;
+                    padding-right: 110px;
                 }
             }
         }
     }
     
     .gallery  {
-        padding: 20px 30px 40px 30px;
+        padding: 20px 12px 40px 12px;
         .gallery-box {
             img {
-                height: 200px;
-                margin: 10px;
-                width: 30%;
-                box-shadow: 7px 7px 15px rgba(0,0,0,0.2);
+                box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+                height: 120px;
+                margin: 5px;
+                width: 45%;
             }
         }
         .gallery-pagination {
-            font-size: 19px;
+            font-size: 16px;
             margin-top: 15px;
             .prevPage {
-                padding: 7px 20px 7px 10px;
+                padding: 7px 15px 7px 10px;
                 font-weight: 400;
             }
             .pages {
@@ -5220,7 +5220,7 @@ footer {
                 }
             }
             .nextPage {
-                padding: 7px 10px 10px 7px;
+                padding: 7px 10px 7px 15px;
                 font-weight: 400;
             }
         }
@@ -5231,35 +5231,35 @@ footer {
     #lightbox {
         .img-wrapper {
             .close-btn {
-                top: 20px;
-                right: -70px;
                 padding: 10px;
+                right: -10px;
+                top: 0px;
                 img {
-                    width: 32px;
+                    width: 20px;
                 }
             }
             .prev-btn {
-                left: -100px;
-                padding: 30px;
+                left: -58px;
+                padding: 20px;
                 img {
-                    width: 45px;
+                    width: 30px;
                 }
             }
             .next-btn {
-                right: -100px;
-                padding: 30px;
+                right: -58px;
+                padding: 20px;
                 img {
-                    width: 45px;
+                    width: 30px;
                 }
             }
             .img-title {
                 p {
-                font-size: 20px;
+                font-size: 14px;
                 }
             }
         }
         .img-wrapper > img {
-            padding: 100px 0 10px 0;
+            padding: 45px 0 0 0;
             max-width: 75vw;
             max-height: 85vh;
             
