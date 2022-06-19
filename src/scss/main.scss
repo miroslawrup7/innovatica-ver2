@@ -4345,7 +4345,7 @@ footer {
         }
     
         .text {
-            font-size: 9px;
+            font-size: 8px;
             font-weight: 600;
             line-height: 12px;
             margin-bottom: 20px;
@@ -4375,9 +4375,12 @@ footer {
     
     .quick-contact {
         height: $height-quick-contact;
-        box-shadow: -3px 0px 3px rgba(0, 0, 0, 0.6);
+      
         .polygons {
             height: $height-quick-contact;
+            .shadow {
+                box-shadow: 0 -3px 3px rgba(0,0,0,0.6);
+            }
             .polygon {
                 &.plg-1 {
                     display: none;
@@ -4911,12 +4914,12 @@ footer {
         .background {
             height: $height-sec-1;
             &.img {
-                background-position-x: 200px;
-                background-position-y: -100px;
-                background-size: 100%;
+                background-position-x: -100px;
+                background-position-y: 0px;
+                background-size: 120%;
             }
             &.grad {
-                background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.7) 90%, rgba(255,255,255,1) 100%);
+               display: none;
             }
         }
     
@@ -4924,66 +4927,78 @@ footer {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    background-color: black;
                     &.plg-1 {
-                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-services-1 - $height-sec-1) 100%);
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
+                    }
+                    &.plg-2 {
+                        display: none;
                     }
                 }
                 &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
+                }
+                &.right {
+                    display: none;
                 }
             }
         }
         .content {
-            padding-left: 60px;
-            padding-top: 40px;
+            margin-top: 10px;
+            padding-left: 145px;
+            &.black {
+                color: white;
+            }
             .line {
-                padding-left: 30px;
-                border-left: 2px solid white;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 455px;
+                    padding-right: 32px;
                 }
             }
         }
     }
     
     .services-2 {
-        height: $height-sec-2;
+        height: $height-sec-1;
         .background {
-            height: $height-sec-2;
+            height: $height-sec-1;
             &.grad {
-                background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0.8) 100%);
+                display: none;
             }
         }
     
         .polygons {
-            height: $height-sec-2;
+            height: $height-sec-1;
             .shadow {
                 .polygon {
                     &.plg-2 {
-                        clip-path: polygon(calc(((100vw - $resolution) / 2) - $l1-pt-services-2) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-2) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-2 + $height-sec-2) 100%, calc(((100vw - $resolution) / 2) - $l1-pt-services-2 + $height-sec-2) 100%);
-                        background: linear-gradient(rgba(0,0,0,1), rgba(200,200,200,1));
+                        display: none;
                     }
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    display: none;
                 }
             }
         }
         .content {
-            padding-left: 435px;
-            padding-top: 33px;
+            padding-left: 15px;
+            padding-top: 15px;
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 5px;
+                    padding-right: 193px;
                 }
                 .circle-imgs {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
                     img {
-                        width: 100px;
-                        height: 100px;
+                        width: 60px;
+                        height: 60px;
                         border-radius: 50%;
-                        margin: 0 15px 15px 0;
+                        margin: 0 14px 10px 0;
                         object-fit: cover;
                         object-position: left;
                     }
@@ -4992,56 +5007,70 @@ footer {
         }
        
         .polywrapper {
-            height: $height-sec-2;
+            height: $height-sec-1;
             img {
-                height: 350px;
-                left: -15px;
-                bottom: 30px;
+                bottom: 102px;
+                height: 160px;
+                left: 157px;
             }
         }
     }
     
     .services-3 {
-        height: $height-sec-3;
+        height: $height-sec-1;
         .background {
-            height: $height-sec-3;
+            height: $height-sec-1;
             &.img {
-                background-size: 85%;
-                background-position-x: 100px;
-                background-position-y: -70px;
+                background-size: 200%;
+                background-position-x: -380px;
+                background-position-y: -60px;
             }
             &.grad {
-                background: linear-gradient(90deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 30%, rgba(255,255,255,0.95) 40%, rgba(255,255,255,0.8) 45%,rgba(255,255,255,0) 70%);
+                display: none;
             }
         }
     
         .polygons {
-            height: $height-sec-3;
+            height: $height-sec-1;
             .shadow {
                 .polygon {
-                    &.plg-2 {
-                        clip-path: polygon(calc(100% - $l2-pt-services-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, 0% 100%, 0% calc(100% - $x2-pt-services-3), calc(100% - $x2-pt-services-3 - $height-sec-3 - ((100vw - $resolution) / 2) + $x2-pt-services-3) calc(100% - $x2-pt-services-3), calc(100% - $x2-pt-services-3 - $height-sec-3 - ((100vw - $resolution) / 2)) 100%);
+                    background-color: black;
+                    &.plg-1 {
+                        display: none;
                     }
+                    &.plg-2 {
+                        clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 0%, 100% 0%, 100% 100%, calc(((100vw - $resolution) / 2) + $l1-pt-home-1) 100%);
+                    }
+                   
                 }
                 &.left {
-                    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
+                    display: none;
                 }
                 &.right {
-                    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+                    filter: drop-shadow(-3px 0px 3px rgba(0, 0, 0, 0.6));
+                    
                 }
             }
         }
+
+
         .content {
-            padding-top: 40px;
-            padding-left: 60px;
+            margin-top: 0px;
+            padding-left: 145px;
+            padding-top: 25px;
+            &.black {
+                color: white;
+            }
             .line {
-                padding-left: 30px;
-                border-left: 2px solid black;
+                padding-left: 0;
+                border-left: none;
                 .text {
-                    padding-right: 400px;
+                    padding-right: 32px;
+                    margin-bottom: 10px;
                 }
+
                 img {
-                    height: 150px;
+                    height: 79px;
                 }
             }
         }
