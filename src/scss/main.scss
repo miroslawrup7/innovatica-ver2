@@ -4331,7 +4331,7 @@ a.button.white:hover img {
                 }
             }
             .hamburger {
-                position: fixed;
+                position: absolute;
                 right: calc(((100vw - 360px) / 2) + 20px);
                 top: 23px;
                 width: 20px;
@@ -4381,7 +4381,6 @@ a.button.white:hover img {
     header .menu.navigation.mobile-open ul li a:hover {
         border-bottom: none;
         text-shadow: none;
-        // background-color: rgba(255, 255, 255, 0.05);
         color: #ED2D32;
         width: 100%;
     }
@@ -4413,6 +4412,7 @@ a.button.white:hover img {
         margin-top: 0;
         flex-direction: column;
         height: fit-content;
+        // position: relative;
     }
 
     header .logo.mobile-open {
@@ -4426,7 +4426,7 @@ a.button.white:hover img {
         height: fit-content;
         right: calc(((100vw - 360px) / 2) + 20px);
         width: 20px;
-        position: fixed;
+        position: absolute;
         top: 23px;
     }
     
