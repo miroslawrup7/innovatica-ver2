@@ -25,18 +25,22 @@ $height-quick-contact: 270px;
 $l-pt-quick-contact: 1555px;
 
 $r1-pt-home-1: 1810px;
-$l2-pt-home-1: 120px;
+// $l2-pt-home-1: 120px;
+$l2-pt-home-1: 0px;
 
 $l2-pt-home-2: 1820px;
 
 $r1-pt-home-3: 1810px;
-$l2-pt-home-3: 120px;
+// $l2-pt-home-3: 120px;
+$l2-pt-home-3: 0px;
 
-$r1-pt-home-4: 120px;
+// $r1-pt-home-4: 120px;
+$r1-pt-home-4: 0px;
 $l2-pt-home-4: 1820px;
 
 $r1-pt-about-1: 1810px;
-$l2-pt-about-1: 300px;
+// $l2-pt-about-1: 300px;
+$l2-pt-about-1: 0px;
 
 $r1-pt-about-2: 0px;
 $l2-pt-about-2: 1820px;
@@ -462,6 +466,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -546,6 +552,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -588,6 +596,7 @@ a.button.white:hover img {
             .polygon {
                 &.plg-1 {
                     clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                    // clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2)) 0%, calc(((100vw - $resolution) / 2) + $height-sec-1) 100%, 0% 100%);
                 }
             }
             .polygon {
@@ -635,6 +644,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-about-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-about-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -1294,18 +1305,22 @@ a.button.white:hover img {
     $l-pt-quick-contact: 1185px;
     
     $r1-pt-home-1: 1400px;
-    $l2-pt-home-1: 90px;
+    // $l2-pt-home-1: 90px;
+    $l2-pt-home-1: 0px;
     
     $l2-pt-home-2: 1350px;
     
     $r1-pt-home-3: 1350px;
-    $l2-pt-home-3: 90px;
+    // $l2-pt-home-3: 90px;
+    $l2-pt-home-3: 0px;
     
-    $r1-pt-home-4: 90px;
+    // $r1-pt-home-4: 90px;
+    $r1-pt-home-4: 0px;
     $l2-pt-home-4: 1350px;
     
     $r1-pt-about-1: 1380px;
-    $l2-pt-about-1: 250px;
+    // $l2-pt-about-1: 250px;
+    $l2-pt-about-1: 0px;
     
     $r1-pt-about-2: 0px;
     $l2-pt-about-2: 1350px;
@@ -2281,18 +2296,22 @@ a.button.white:hover img {
     $l-pt-quick-contact: 783px;
     
     $r1-pt-home-1: 900px;
-    $l2-pt-home-1: 70px;
+    // $l2-pt-home-1: 70px;
+    $l2-pt-home-1: 0px;
     
     $l2-pt-home-2: 900px;
     
     $r1-pt-home-3: 900px;
-    $l2-pt-home-3: 90px;
+    // $l2-pt-home-3: 90px;
+    $l2-pt-home-3: 0px;
     
-    $r1-pt-home-4: 70px;
+    // $r1-pt-home-4: 70px;
+    $r1-pt-home-4: 0px;
     $l2-pt-home-4: 900px;
     
     $r1-pt-about-1: 900px;
-    $l2-pt-about-1: 170px;
+    // $l2-pt-about-1: 170px;
+    $l2-pt-about-1: 0px;
     
     $r1-pt-about-2: 0px;
     $l2-pt-about-2: 900px;
@@ -3548,7 +3567,8 @@ a.button.white:hover img {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-1 - $height-sec-1) 100%, 0% 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -3624,10 +3644,10 @@ a.button.white:hover img {
                 .polygon {
                     &.plg-1 {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-3) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-3 - $height-sec-1) 100%, 0% 100%);
-                       
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -3666,7 +3686,8 @@ a.button.white:hover img {
             .shadow {
                 .polygon {
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                        // clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 .polygon {
@@ -3713,6 +3734,7 @@ a.button.white:hover img {
                     }
                     &.plg-2 {
                         clip-path: polygon(calc(100% + $l2-pt-about-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-about-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -4080,7 +4102,8 @@ a.button.white:hover img {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1 - $height-sec-1) 100%, 0% 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l1-pt-contact-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l1-pt-contact-2 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l1-pt-contact-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l1-pt-contact-2 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
