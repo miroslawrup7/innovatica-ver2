@@ -25,18 +25,22 @@ $height-quick-contact: 270px;
 $l-pt-quick-contact: 1555px;
 
 $r1-pt-home-1: 1810px;
-$l2-pt-home-1: 120px;
+// $l2-pt-home-1: 120px;
+$l2-pt-home-1: 0px;
 
 $l2-pt-home-2: 1820px;
 
 $r1-pt-home-3: 1810px;
-$l2-pt-home-3: 120px;
+// $l2-pt-home-3: 120px;
+$l2-pt-home-3: 0px;
 
-$r1-pt-home-4: 120px;
+// $r1-pt-home-4: 120px;
+$r1-pt-home-4: 0px;
 $l2-pt-home-4: 1820px;
 
 $r1-pt-about-1: 1810px;
-$l2-pt-about-1: 300px;
+// $l2-pt-about-1: 300px;
+$l2-pt-about-1: 0px;
 
 $r1-pt-about-2: 0px;
 $l2-pt-about-2: 1820px;
@@ -115,18 +119,19 @@ header {
                 justify-content: space-around;
                 align-items: center;
                 li {
+                    color: white;
                     margin: 2px;
                     padding: 5px 7px;
+                    &:hover {
+                        cursor: pointer;
+                        color: #ED2D32;
+                    }
+                    
                     &.active {
                         background-color: white;
-                        a {
-                            color: black;
-                            font-weight: 700;
-                        }
+                        color: black;
+                        font-weight: 700;
                     }
-                }
-                a {
-                    color: white;
                 }
             }
         }
@@ -260,6 +265,9 @@ header {
         img {
             height: 36px;
             margin-left: 40px;
+        }
+        &.icon {
+            justify-content: space-between;
         }
     }
 }
@@ -462,6 +470,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -546,6 +556,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -588,6 +600,7 @@ a.button.white:hover img {
             .polygon {
                 &.plg-1 {
                     clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                    // clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2)) 0%, calc(((100vw - $resolution) / 2) + $height-sec-1) 100%, 0% 100%);
                 }
             }
             .polygon {
@@ -635,6 +648,8 @@ a.button.white:hover img {
                 }
                 &.plg-2 {
                     clip-path: polygon(calc(100% + $l2-pt-about-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-about-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                    // clip-path: polygon(calc(100% - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+
                 }
             }
             &.left {
@@ -1100,7 +1115,7 @@ a.button.white:hover img {
             align-items: center;
             .address-box {
                 border-left: 4px solid black;
-                padding: 0 50px;
+                padding-left: 50px;
                 width: 50%;
                 height: fit-content;
                 h2 {
@@ -1109,7 +1124,7 @@ a.button.white:hover img {
             }
             p, a {
                 display: block;
-                font-size: 30px;
+                font-size: 28px;
                 font-weight: 500;
                 line-height: 70px;
                 color: black;
@@ -1294,18 +1309,22 @@ a.button.white:hover img {
     $l-pt-quick-contact: 1185px;
     
     $r1-pt-home-1: 1400px;
-    $l2-pt-home-1: 90px;
+    // $l2-pt-home-1: 90px;
+    $l2-pt-home-1: 0px;
     
     $l2-pt-home-2: 1350px;
     
     $r1-pt-home-3: 1350px;
-    $l2-pt-home-3: 90px;
+    // $l2-pt-home-3: 90px;
+    $l2-pt-home-3: 0px;
     
-    $r1-pt-home-4: 90px;
+    // $r1-pt-home-4: 90px;
+    $r1-pt-home-4: 0px;
     $l2-pt-home-4: 1350px;
     
     $r1-pt-about-1: 1380px;
-    $l2-pt-about-1: 250px;
+    // $l2-pt-about-1: 250px;
+    $l2-pt-about-1: 0px;
     
     $r1-pt-about-2: 0px;
     $l2-pt-about-2: 1350px;
@@ -2152,6 +2171,9 @@ a.button.white:hover img {
                     h2 {
                         margin-bottom: 20px;
                     }
+                    #cc3, #cc5 {
+                        line-height: 30px;
+                    }
                 }
                 p, a {
                     font-size: 22px;
@@ -2281,18 +2303,22 @@ a.button.white:hover img {
     $l-pt-quick-contact: 783px;
     
     $r1-pt-home-1: 900px;
-    $l2-pt-home-1: 70px;
+    // $l2-pt-home-1: 70px;
+    $l2-pt-home-1: 0px;
     
     $l2-pt-home-2: 900px;
     
     $r1-pt-home-3: 900px;
-    $l2-pt-home-3: 90px;
+    // $l2-pt-home-3: 90px;
+    $l2-pt-home-3: 0px;
     
-    $r1-pt-home-4: 70px;
+    // $r1-pt-home-4: 70px;
+    $r1-pt-home-4: 0px;
     $l2-pt-home-4: 900px;
     
     $r1-pt-about-1: 900px;
-    $l2-pt-about-1: 170px;
+    // $l2-pt-about-1: 170px;
+    $l2-pt-about-1: 0px;
     
     $r1-pt-about-2: 0px;
     $l2-pt-about-2: 900px;
@@ -2332,7 +2358,7 @@ a.button.white:hover img {
             .menu {
                 font-size: 15px;
                 .menu-items {
-                    max-width: 430px;
+                    max-width: 475px;
                     li {
                         border-bottom: 2px transparent solid;
                         padding: 5px 10px;
@@ -2452,7 +2478,7 @@ a.button.white:hover img {
         }
         .qc-content {
             height: $height-quick-contact;
-            padding-left: 300px;
+            padding-left: 275px;
             .facebook {
                 width: 70px;
                 height: 70px;
@@ -3320,7 +3346,7 @@ a.button.white:hover img {
             .menu {
                 font-size: 13px;
                 .menu-items {
-                    max-width: 340px;
+                    max-width: 420px;
                     li {
                         border-bottom: 2px transparent solid;
                         padding: 5px 10px;
@@ -3331,7 +3357,7 @@ a.button.white:hover img {
                 }
                 .languages {
                     width: 70px;
-                    margin-left: 40px;
+                    margin-left: 10px;
                     li {
                         margin: 1px;
                         padding: 2px 3px;
@@ -3548,7 +3574,8 @@ a.button.white:hover img {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-1 - $height-sec-1) 100%, 0% 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l2-pt-home-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -3624,10 +3651,10 @@ a.button.white:hover img {
                 .polygon {
                     &.plg-1 {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-3) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-home-3 - $height-sec-1) 100%, 0% 100%);
-                       
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l2-pt-home-3 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-home-3 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -3666,7 +3693,8 @@ a.button.white:hover img {
             .shadow {
                 .polygon {
                     &.plg-1 {
-                        clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                        // clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4) 0%, calc(((100vw - $resolution) / 2) - $r1-pt-home-4 + $height-sec-1) 100%, 0% 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 .polygon {
@@ -3713,6 +3741,7 @@ a.button.white:hover img {
                     }
                     &.plg-2 {
                         clip-path: polygon(calc(100% + $l2-pt-about-1 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l2-pt-about-1 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -4080,7 +4109,8 @@ a.button.white:hover img {
                         clip-path: polygon(0% 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-contact-1 - $height-sec-1) 100%, 0% 100%);
                     }
                     &.plg-2 {
-                        clip-path: polygon(calc(100% + $l1-pt-contact-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l1-pt-contact-2 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        // clip-path: polygon(calc(100% + $l1-pt-contact-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% + $l1-pt-contact-2 - $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
+                        clip-path: polygon(0 0);
                     }
                 }
                 &.left {
@@ -4321,7 +4351,7 @@ a.button.white:hover img {
                     margin-left: 40px;
                     li {
                         margin: 1px;
-                        padding: 0;
+                        padding: 7px;
                         &.active {
                             a {
                                 font-weight: 700;
@@ -4482,7 +4512,7 @@ a.button.white:hover img {
             font-size: 8px;
             font-weight: 600;
             line-height: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
     
         .subtitle {
@@ -4495,7 +4525,7 @@ a.button.white:hover img {
             font-size: 9px;
             font-weight: 600;
             margin: 5px 0;
-            min-width: 103px;
+            width: 190px;
             padding: 5px 6px;
             &.black {
                 font-weight: 800;
@@ -4898,7 +4928,7 @@ a.button.white:hover img {
             width: $resolution;
             img {
                 bottom: 0;
-                left: 205px;
+                left: 218px;
                 height: calc($height-sec-1 + 6%)
             }
         }
@@ -5126,7 +5156,7 @@ a.button.white:hover img {
                 }
                 .circle-imgs {
                     position: absolute;
-                    bottom: 0;
+                    bottom: 0px;
                     right: 0;
                     img {
                         width: 60px;
@@ -5136,7 +5166,16 @@ a.button.white:hover img {
                         object-fit: cover;
                         object-position: left;
                     }
+                    &.lng-de {
+                        bottom: 20px;
+                    }
                 }
+                .button {
+                    &.lng-de {
+                        width: 220px;  
+                    }               
+                }
+                
             }
         }
        
@@ -5284,6 +5323,9 @@ a.button.white:hover img {
                     width: 50%;
                     h2 {
                         margin-bottom: 10px;
+                    }
+                    #cc3, #cc5 {
+                        line-height: 10px;
                     }
                 }
                 p, a {
