@@ -513,6 +513,9 @@ a.button.white:hover img {
         height: $height-sec-1;
         .shadow {
             .polygon {
+                &.plg-1 {
+                    clip-path: polygon(0% 0%, calc((100vw - $resolution) / 2) 0%, calc((100vw - $resolution) / 2) 100%, 0% 100%);
+                }
                 &.plg-2 {
                     clip-path: polygon(calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-home-2 + $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
                 }
@@ -897,7 +900,11 @@ a.button.white:hover img {
                 &.plg-1 {
                     clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-services-1 - $height-sec-1) 100%);
                 }
+                &.plg-2 {
+                    clip-path: polygon(calc(100% - (100vw - $resolution) / 2) 0%, 100% 0%, 100% 100%, calc(100% - ((100vw - $resolution) / 2) - $height-sec-1) 100%);
+                }
             }
+            
             &.left {
                 z-index: 1;
                 filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
@@ -1168,6 +1175,7 @@ a.button.white:hover img {
             border-left: 5px solid black;
             .text {
                 padding-right: 1300px;
+                font-weight: 600;
             }
         }
     }
@@ -1302,7 +1310,7 @@ a.button.white:hover img {
     $height-sec-1: 630px;
     $height-sec-2: 820px;
     $height-sec-3: 750px;
-    $height-sec-4: 230px;
+    $height-sec-4: 300px;
     
     $height-quick-contact: 210px;
     
@@ -1625,6 +1633,9 @@ a.button.white:hover img {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    &.plg-1 {
+                        clip-path: polygon(0% 0%, calc((100vw - $resolution) / 2) 0%, calc((100vw - $resolution) / 2) 100%, 0% 100%);
+                    }
                     &.plg-2 {
                         clip-path: polygon(calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-home-2 + $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
                     }
@@ -1974,6 +1985,9 @@ a.button.white:hover img {
                     &.plg-1 {
                         clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-services-1 - $height-sec-1) 100%);
                     }
+                    &.plg-2 {
+                        clip-path: polygon(calc(100% - (100vw - $resolution) / 2) 0%, 100% 0%, 100% 100%, calc(100% - ((100vw - $resolution) / 2) - $height-sec-1) 100%);
+                    }
                 }
                 &.left {
                     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
@@ -2212,6 +2226,7 @@ a.button.white:hover img {
                 border-left: 3px solid black;
                 .text {
                     padding-right: 1000px;
+                    font-weight: 600;
                 }
             }
         }
@@ -2296,7 +2311,7 @@ a.button.white:hover img {
     $height-sec-1: 420px;
     $height-sec-2: 540px;
     $height-sec-3: 500px;
-    $height-sec-4: 150px;
+    $height-sec-4: 200px;
     
     $height-quick-contact: 150px;
     
@@ -2620,6 +2635,9 @@ a.button.white:hover img {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    &.plg-1 {
+                        clip-path: polygon(0% 0%, calc((100vw - $resolution) / 2) 0%, calc((100vw - $resolution) / 2) 100%, 0% 100%);
+                    }
                     &.plg-2 {
                         clip-path: polygon(calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-home-2 + $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
                     }
@@ -2969,6 +2987,9 @@ a.button.white:hover img {
                     &.plg-1 {
                         clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-services-1 - $height-sec-1) 100%);
                     }
+                    &.plg-2 {
+                        clip-path: polygon(calc(100% - (100vw - $resolution) / 2) 0%, 100% 0%, 100% 100%, calc(100% - ((100vw - $resolution) / 2) - $height-sec-1) 100%);
+                    }
                 }
                 &.left {
                     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
@@ -3204,6 +3225,7 @@ a.button.white:hover img {
                 border-left: 2px solid black;
                 .text {
                     padding-right: 650px;
+                    font-weight: 600;
                 }
             }
         }
@@ -3288,7 +3310,7 @@ a.button.white:hover img {
     $height-sec-1: 420px;
     $height-sec-2: 540px;
     $height-sec-3: 500px;
-    $height-sec-4: 100px;
+    $height-sec-4: 150px;
     
     $height-quick-contact: 110px;
     
@@ -3613,6 +3635,9 @@ a.button.white:hover img {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    &.plg-1 {
+                        clip-path: polygon(0% 0%, calc((100vw - $resolution) / 2) 0%, calc((100vw - $resolution) / 2) 100%, 0% 100%);
+                    }
                     &.plg-2 {
                         clip-path: polygon(calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, 100% 0%, 100% 100%, calc(100% - $l2-pt-home-2 + $height-sec-1 - ((100vw - $resolution) / 2)) 100%);
                     }
@@ -3965,6 +3990,9 @@ a.button.white:hover img {
                     &.plg-1 {
                         clip-path: polygon(calc(((100vw - $resolution) / 2) + $l1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1) 0%, calc(((100vw - $resolution) / 2) + $r1-pt-services-1 - $height-sec-1) 100%, calc(((100vw - $resolution) / 2) + $l1-pt-services-1 - $height-sec-1) 100%);
                     }
+                    &.plg-2 {
+                        clip-path: polygon(0 0);
+                    }
                 }
                 &.left {
                     filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.6));
@@ -4201,6 +4229,7 @@ a.button.white:hover img {
                 border-left: 2px solid black;
                 .text {
                     padding-right: 340px;
+                    font-weight: 600;
                 }
             }
         }
@@ -4723,6 +4752,9 @@ a.button.white:hover img {
             height: $height-sec-1;
             .shadow {
                 .polygon {
+                    &.plg-1 {
+                        clip-path: polygon(0% 0%, calc((100vw - $resolution) / 2) 0%, calc((100vw - $resolution) / 2) 100%, 0% 100%);
+                    }
                     &.plg-2 {
                         clip-path: polygon(0% 0%, calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 0%, calc(100% - $l2-pt-home-2 - ((100vw - $resolution) / 2)) 100%, 0% 100%);
                     }
@@ -5367,6 +5399,7 @@ a.button.white:hover img {
                 border-left: none;
                 .text {
                     padding-right: 110px;
+                    font-weight: 600;
                 }
             }
         }
